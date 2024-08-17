@@ -10,14 +10,22 @@
     <header>
       <nav>
         <div class="logo">LOGO</div>
+        <div>Welcome</div>
         <menu class="btn top-menu" id="top-menu">
-          <li><button id="signup-btn" class="btn nav-btn">Sign up</button></li>
-          <li><button id="login-btn" class="btn nav-btn">Login</button></li>
           <li><button id="logout-btn" class="btn nav-btn">Logout</button></li>
         </menu>
       </nav>
     </header>
-    <main></main>
+
+    <section class="container">
+      <div class="start-screen">
+
+        <button id="signup-btn" class="btn btn-text">Sign up</button>
+        <span> or </span>
+        <button id="login-btn" class="btn btn-text">Login</button>
+      </menu>
+    </div>
+    </section>
 
     <!-- Signup Modal -->
 
@@ -43,21 +51,19 @@
           />
         </div>
         <div class="modal-action">
-          <button class="btn action-btn danger" type="button" class="">
+          <button
+            id="cancel-signup-btn"
+            class="btn action-btn danger"
+            type="button"
+          >
             Cancel
           </button>
-          <button
-            class="btn action-btn success"
-            type="submit"
-            class=""
-            id="signup-btn"
-          >
+          <button class="btn action-btn success" type="submit" id="signup-btn">
             Sign Up
           </button>
         </div>
       </form>
     </div>
-    -->
 
     <!-- Login Modal -->
 
@@ -83,22 +89,21 @@
           />
         </div>
         <div class="modal-action">
-          <button class="btn action-btn danger" type="button" class="">
+          <button
+            id="cancel-login-btn"
+            class="btn action-btn danger"
+            type="button"
+          >
             Cancel
           </button>
-          <button
-            class="btn action-btn success"
-            type="submit"
-            class=""
-            id="login-btn"
-          >
+          <button class="btn action-btn success" type="submit" id="login-btn">
             Login
           </button>
         </div>
       </form>
       <p class="modal-paragraph">
         Not having an account yet?
-        <button class="btn btn-action btn-text">Signup</button>
+        <button id="signup-btn-login" class="btn btn-action btn-text">Signup</button>
       </p>
     </div>
 

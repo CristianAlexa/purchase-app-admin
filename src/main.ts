@@ -19,16 +19,33 @@
 // setupCounter(document.querySelector<HTMLButtonElement>("#counter")!);
 
 const signupBtn = document.querySelector<HTMLButtonElement>("#signup-btn");
+const signupBtnLogin =
+  document.querySelector<HTMLButtonElement>("#signup-btn-login");
 const loginBtn = document.querySelector<HTMLButtonElement>("#login-btn");
+const cancelSignupBtn =
+  document.querySelector<HTMLButtonElement>("#cancel-signup-btn");
+const cancelLoginBtn =
+  document.querySelector<HTMLButtonElement>("#cancel-login-btn");
 const signupModal = document.querySelector<HTMLDivElement>("#signup-modal");
 const loginModal = document.querySelector<HTMLDivElement>("#login-modal");
 
 signupBtn?.addEventListener("click", () => {
-  console.log("click");
   signupModal?.classList.add("active");
 });
 
 loginBtn?.addEventListener("click", () => {
-  console.log("click");
   loginModal?.classList.add("active");
+});
+
+cancelSignupBtn?.addEventListener("click", (e) => {
+  signupModal?.classList.remove("active");
+});
+
+cancelLoginBtn?.addEventListener("click", () => {
+  loginModal?.classList.remove("active");
+});
+
+signupBtnLogin?.addEventListener("click", () => {
+  loginModal?.classList.remove("active");
+  signupModal?.classList.add("active");
 });

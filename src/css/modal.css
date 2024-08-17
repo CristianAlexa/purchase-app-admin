@@ -2,19 +2,19 @@
   position: absolute;
   top: -100%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0%);
   background-color: var(--color-grey-100);
   padding: 2rem 4rem;
   border: 1px solid var(--color-grey-400);
   border-radius: 10px;
   box-shadow: 0 0 2rem 0 var(--color-grey-200);
   text-align: center;
-
+  z-index: 10;
   transition: all 500ms ease;
 }
 
 .active {
-  top: 30%;
+  top: 100px;
 }
 
 .modal > form {
