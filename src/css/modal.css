@@ -1,6 +1,6 @@
 .modal {
   position: absolute;
-  top: 40%;
+  top: -100%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: var(--color-grey-100);
@@ -9,7 +9,12 @@
   border-radius: 10px;
   box-shadow: 0 0 2rem 0 var(--color-grey-200);
   text-align: center;
-  display: none;
+
+  transition: all 500ms ease;
+}
+
+.active {
+  top: 30%;
 }
 
 .modal > form {

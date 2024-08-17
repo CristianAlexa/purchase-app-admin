@@ -17,3 +17,18 @@
 // `;
 
 // setupCounter(document.querySelector<HTMLButtonElement>("#counter")!);
+
+const signupBtn = document.querySelector<HTMLButtonElement>("#signup-btn");
+const loginBtn = document.querySelector<HTMLButtonElement>("#login-btn");
+const signupModal = document.querySelector<HTMLDivElement>("#signup-modal");
+const loginModal = document.querySelector<HTMLDivElement>("#login-modal");
+
+signupBtn?.addEventListener("click", () => {
+  console.log("click");
+  signupModal?.classList.add("active");
+});
+
+loginBtn?.addEventListener("click", () => {
+  console.log("click");
+  loginModal?.classList.add("active");
+});
