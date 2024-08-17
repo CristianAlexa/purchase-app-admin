@@ -18,29 +18,87 @@
       </nav>
     </header>
     <main></main>
-    <div id="signup-modal" class="modal">
-      <form action="">
+
+    <!-- Signup Modal -->
+
+    <!-- <div id="signup-modal" class="modal">
+      <form id="signup-form">
         <h3>Sign Up</h3>
         <div class="">
-          <input type="text" placeholder="Enter Email" name="email" required />
+          <input
+            type="text"
+            placeholder="Enter Email"
+            name="email"
+            id="signup-email"
+            required
+          />
         </div>
         <div>
           <input
             type="password"
             placeholder="Enter Password"
             name="password"
+            id="signup-password"
             required
           />
         </div>
         <div class="modal-action">
-          <button class="btn action-btn danger" type="button" class="">
+          <button class="btn action-btn danger" type="button" class="" id="cancel-btn">
             Cancel
           </button>
-          <button class="btn action-btn success" type="submit" class="">
+          <button class="btn action-btn success" type="submit" class="" id="signup-btn">
             Sign Up
           </button>
         </div>
       </form>
+    </div> -->
+
+    <!-- Login Modal -->
+
+    <div id="login-modal" class="modal">
+      <form id="login-form">
+        <h3>Login</h3>
+        <div class="">
+          <input
+            type="text"
+            placeholder="Enter Email"
+            name="email"
+            id="login-email"
+            required
+          />
+        </div>
+        <div>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="password"
+            id="login-password"
+            required
+          />
+        </div>
+        <div class="modal-action">
+          <button
+            class="btn action-btn danger"
+            type="button"
+            class=""
+            id="cancel-btn"
+          >
+            Cancel
+          </button>
+          <button
+            class="btn action-btn success"
+            type="submit"
+            class=""
+            id="login-btn"
+          >
+            Login
+          </button>
+        </div>
+      </form>
+      <p class="modal-paragraph">
+        Not having an account yet?
+        <button class="btn btn-action btn-text">Signup</button>
+      </p>
     </div>
 
     <script type="module" src="/src/main.ts"></script>
